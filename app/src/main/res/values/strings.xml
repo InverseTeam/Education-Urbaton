@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InverseEducation</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="login">Войти</string>
+    <string name="dont_have_account">Нет аккаунта?</string>
+    <string name="to_registration">Зарегистрируйтесь</string>
 </resources>
