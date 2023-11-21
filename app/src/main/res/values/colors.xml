@@ -10,4 +10,5 @@
     <color name="background_bottom_login">#2D2D2F</color>
     <color name="main_text">#5984F3</color>
     <color name="second_text">#A4A4A4</color>
+    <color name="third_text">#707072</color>
 </resources>

@@ -18,4 +18,5 @@
     <string name="inverse_project_description">Сервис для организации проектной деятельности в учебном заведении</string>
     <string name="inverse_afisha_description">Сервис для формирование туристических пакетов</string>
     <string name="inverse_documents_description">Сервис для автоматизации согласования документов внутри компании </string>
+    <string name="search_with_endpoint">Найти...</string>
 </resources>
