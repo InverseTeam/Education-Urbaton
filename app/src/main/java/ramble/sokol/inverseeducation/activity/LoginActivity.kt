@@ -1,9 +1,10 @@
-package ramble.sokol.inverseeducation
+package ramble.sokol.inverseeducation.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import android.view.WindowManager
+import ramble.sokol.inverseeducation.R
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
