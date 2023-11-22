@@ -148,7 +148,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layout_profile_info"
+                android:id="@+id/layout_achievements_prize"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"

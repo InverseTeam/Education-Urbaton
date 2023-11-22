@@ -12,4 +12,7 @@
     <color name="second_text">#A4A4A4</color>
     <color name="third_text">#707072</color>
     <color name="sheet_background">#E6131316</color>
+    <color name="content_blue_background">#1D336F</color>
+    <color name="filter_blue_background">#3966DB</color>
+    <color name="backgroung_chip_choice">#255DF0</color>
 </resources>

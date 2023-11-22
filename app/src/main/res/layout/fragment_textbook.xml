@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextbookFragment"
+    android:background="@drawable/image_textbook_background"
+    android:adjustViewBounds="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        >
+
+        <ImageButton
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/icon_button_back"
+            android:background="#00FFFFFF"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sheet_background"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="30dp"
+            android:paddingHorizontal="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="Геометрия 10-11 класс"
+                android:textSize="22sp"
+                android:fontFamily="@font/labgrotesque_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_textbook_top"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/main_text"
+                    tools:text="3.0 |"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="56 отзывов"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_textbook_author"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="Атанасян Л. С. и другие"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_textbook_pages"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="234 страницы"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/icon_textbook_date"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="1992, 2009, 2013"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="Комплект учебно-методических материалов полностью адаптирован для работы с учебником автора Л.С. Атанасяна, «Геометрия, 10-11». В представленном комплексе собраны дидактическая информация и рабочие тетради, которые позволят в полной мере обеспечить упрощение работы учителя."
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/labgrotesque_regular" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cornerRadius="8dp"
+                android:paddingVertical="12dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/labgrotesque_medium"
+                android:text="@string/continue_read"
+                android:backgroundTint="@color/background_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

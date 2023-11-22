@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TextbooksFragment"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="23dp"
+            android:paddingTop="17dp"
+            android:paddingHorizontal="17dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/edit_text_search_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_background"
+                    android:drawableStart="@drawable/icon_search"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/labgrotesque_regular"
+                    android:hint="@string/search_with_endpoint"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.02"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="16sp"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/edit_text_background"
+                    android:src="@drawable/icon_filter"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_achievements_prize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/save_textbook"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/labgrotesque_medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/blue_content_background"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_content_blue"
+                        android:layout_gravity="end"/>
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        tools:text="Геометрия 10-11 класс"
+                        android:layout_marginTop="8dp"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/labgrotesque_medium" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/filter_background_blue"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                tools:text="Математика"
+                                android:textSize="8sp"
+                                android:fontFamily="@font/labgrotesque_regular" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/recommend_you"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/labgrotesque_medium" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/blue_content_background"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_content_blue"
+                        android:layout_gravity="end"/>
+
+                    <TextView
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        tools:text="Геометрия 10-11 класс"
+                        android:layout_marginTop="8dp"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/labgrotesque_medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/filter_background_blue"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            tools:text="Математика"
+                            android:textSize="8sp"
+                            android:fontFamily="@font/labgrotesque_regular" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="18dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/all_textbook"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/labgrotesque_medium" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.chip.ChipGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:singleSelection="true"
+                                    android:layout_marginRight="10dp">
+
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomChipChoice"
+                                        tools:text="Математика"
+                                        android:checked="true"
+                                        app:textStartPadding="16dp"
+                                        app:textEndPadding="16dp"
+                                        android:textAppearance="@style/chipText" />
+
+                                    <com.google.android.material.chip.Chip
+                                        style="@style/CustomChipChoice"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        tools:text="Информатика"
+                                        android:textAppearance="@style/chipText"
+                                        app:textEndPadding="16dp"
+                                        app:textStartPadding="16dp" />
+
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomChipChoice"
+                                        tools:text="Биология"
+                                        app:textStartPadding="16dp"
+                                        app:textEndPadding="16dp"
+                                        android:textAppearance="@style/chipText" />
+
+                                    <com.google.android.material.chip.Chip
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        style="@style/CustomChipChoice"
+                                        tools:text="Химия"
+                                        app:textStartPadding="16dp"
+                                        app:textEndPadding="16dp"
+                                        android:textAppearance="@style/chipText" />
+
+
+                                </com.google.android.material.chip.ChipGroup>
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/blue_content_background"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_content_blue"
+                            android:layout_gravity="end"/>
+
+                        <TextView
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            tools:text="Геометрия 10-11 класс"
+                            android:layout_marginTop="8dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/labgrotesque_medium" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/filter_background_blue"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:layout_marginTop="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                tools:text="Математика"
+                                android:textSize="8sp"
+                                android:fontFamily="@font/labgrotesque_regular" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

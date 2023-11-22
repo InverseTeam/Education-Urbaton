@@ -27,4 +27,8 @@
     <string name="download">Скачать</string>
     <string name="go_over">Перейти</string>
     <string name="privileges_and_prizes">Привилегии и призы</string>
+    <string name="continue_read">Продолжить прочтение</string>
+    <string name="save_textbook">Сохраненные учебники</string>
+    <string name="all_textbook">Все учебники</string>
+    <string name="recommend_you">Рекомендовано вам</string>
 </resources>
