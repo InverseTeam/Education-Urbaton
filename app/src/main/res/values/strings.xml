@@ -9,6 +9,7 @@
     <string name="text_school">Школа:</string>
     <string name="text_class">Класс:</string>
     <string name="achievements">Достижения</string>
+    <string name="achievement">Достижение</string>
     <string name="other_products_inverse">Другие продукты Inverse</string>
     <string name="inverse_frame">Inverse.Кадры</string>
     <string name="inverse_project">Inverse.Project</string>
@@ -19,4 +20,11 @@
     <string name="inverse_afisha_description">Сервис для формирование туристических пакетов</string>
     <string name="inverse_documents_description">Сервис для автоматизации согласования документов внутри компании </string>
     <string name="search_with_endpoint">Найти...</string>
+    <string name="application_sent">Заявка отправлена</string>
+    <string name="soon_answer">Совсем скоро вам ответят!</string>
+    <string name="back_to_section">Вернуться к секциям</string>
+    <string name="documents">Документы</string>
+    <string name="download">Скачать</string>
+    <string name="go_over">Перейти</string>
+    <string name="privileges_and_prizes">Привилегии и призы</string>
 </resources>

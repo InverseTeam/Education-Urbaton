@@ -391,8 +391,111 @@
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="16dp"
                     android:layout_marginTop="8dp"
-                    android:orientation="vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
                     android:background="@drawable/layout_profile_info_background">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_ach_1"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="По люБВИ"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/third_text"
+                            android:text="Взять всерос"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_ach_2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Гений мысли"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:text="Выиграть “Своими словами”"
+                            android:textColor="@color/third_text"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_ach_3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:text="Биолог"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="8dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/third_text"
+                            android:text="Выиграть Всесиб"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_medium" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
