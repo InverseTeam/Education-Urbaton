@@ -1,17 +1,10 @@
 package ramble.sokol.inverseeducation.presentation.activity
 
-import android.app.Application
-import android.content.Intent
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import androidx.navigation.NavDeepLinkBuilder
-import moxy.presenter.InjectPresenter
-import ramble.sokol.inverseeducation.LoginFragment
+import ramble.sokol.inverseeducation.presentation.fragment.LoginFragment
 import ramble.sokol.inverseeducation.R
-import javax.inject.Inject
 
 class LoginActivity : AppCompatActivity() {
 

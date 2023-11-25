@@ -44,6 +44,9 @@
     <string name="phone_number">Телефон *</string>
     <string name="documents_section_description">Для подачи заявки нужно прикрепить следующие документы:\n  1. Паспорт законного представителя\n  2. Паспорт/свидетельство о рождении ученика</string>
     <string name="add_folder">Прикрепить файлы</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sections">Секции</string>
+    <string name="calendar">Расписание</string>
+    <string name="textbook">Учебники</string>
+    <string name="news">Новости</string>
+    <string name="profile">Профиль</string>
 </resources>

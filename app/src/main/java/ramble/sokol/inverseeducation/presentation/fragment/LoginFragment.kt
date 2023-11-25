@@ -1,13 +1,14 @@
-package ramble.sokol.inverseeducation
+package ramble.sokol.inverseeducation.presentation.fragment
+
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import moxy.presenter.InjectPresenter
-import moxy.presenter.ProvidePresenter
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import ramble.sokol.inverseeducation.R
 import ramble.sokol.inverseeducation.data.model.GetTokenResponse
 import ramble.sokol.inverseeducation.data.model.UserLoginEntity
 import ramble.sokol.inverseeducation.databinding.FragmentLoginBinding
@@ -15,8 +16,6 @@ import ramble.sokol.inverseeducation.presentation.RetrofitHelper
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import javax.inject.Inject
 
 
 class LoginFragment : Fragment() {
@@ -34,7 +33,6 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         init()
     }
 
@@ -53,7 +51,11 @@ class LoginFragment : Fragment() {
                 response: Response<GetTokenResponse>
             ) {
                 Log.d("MyLog", response.toString())
-            }
+                val transaction = activity!!.supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.linear_fragment, BottomNavBarFragment())
+                transaction.disallowAddToBackStack()
+                transaction.commit()
+                }
 
             override fun onFailure(call: Call<GetTokenResponse>, t: Throwable) {
                 Log.d("MyLog", t.message.toString())
