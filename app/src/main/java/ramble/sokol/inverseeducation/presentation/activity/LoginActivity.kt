@@ -7,10 +7,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import ramble.sokol.inverseeducation.presentation.fragment.LoginFragment
 import ramble.sokol.inverseeducation.R
+import ramble.sokol.inverseeducation.presentation.FirstEntryManager
+import ramble.sokol.inverseeducation.presentation.fragment.BottomNavBarFragment
 
 class LoginActivity : AppCompatActivity() {
 
-
+    private lateinit var firstEntryManager: FirstEntryManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -18,15 +20,32 @@ class LoginActivity : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_main)
-        val loginFragment = LoginFragment()
-        val fragment : Fragment? =
 
-        supportFragmentManager.findFragmentByTag(LoginFragment::class.java.simpleName)
+        firstEntryManager = FirstEntryManager(this)
 
-        if (fragment !is LoginFragment){
-            supportFragmentManager.beginTransaction()
-                .add(R.id.linear_fragment, loginFragment, LoginFragment::class.java.simpleName)
-                .commit()
+        if (firstEntryManager.getFirstEntry() == true){
+            val bottomNavBarFragment = BottomNavBarFragment()
+            val fragment : Fragment? =
+
+                supportFragmentManager.findFragmentByTag(BottomNavBarFragment::class.java.simpleName)
+
+            if (fragment !is BottomNavBarFragment){
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.linear_fragment, bottomNavBarFragment, BottomNavBarFragment::class.java.simpleName)
+                    .commit()
+            }
+        }else {
+
+            val loginFragment = LoginFragment()
+            val fragment: Fragment? =
+
+                supportFragmentManager.findFragmentByTag(LoginFragment::class.java.simpleName)
+
+            if (fragment !is LoginFragment) {
+                supportFragmentManager.beginTransaction()
+                    .add(R.id.linear_fragment, loginFragment, LoginFragment::class.java.simpleName)
+                    .commit()
+            }
         }
 
 //        requestWindowFeature(Window.FEATURE_NO_TITLE)
