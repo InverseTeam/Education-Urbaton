@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.activity.fragment.TextbookFragment"
-    android:background="@drawable/image_textbook_background"
+    tools:context=".presentation.activity.fragment.CurrentSectionFragment"
+    android:background="@drawable/image_current_section"
     android:adjustViewBounds="true"
     >
 
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                tools:text="Геометрия 10-11 класс"
+                tools:text="Программирование на JavaScript"
                 android:textSize="22sp"
                 android:fontFamily="@font/labgrotesque_medium" />
 
@@ -66,7 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/main_text"
-                    tools:text="3.0 |"
+                    tools:text="4.1 |"
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:layout_marginStart="4dp"
@@ -93,59 +93,36 @@
                 <ImageView
                     android:layout_width="18dp"
                     android:layout_height="18dp"
+                    android:src="@drawable/icon_location"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    tools:text="Московская область, ул. Уездная, д. 22"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/labgrotesque_regular" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:src="@drawable/icon_textbook_author"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    tools:text="Атанасян Л. С. и другие"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="@font/labgrotesque_regular" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp">
-
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:src="@drawable/icon_textbook_pages"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    tools:text="234 страницы"
-                    android:textSize="14sp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="@font/labgrotesque_regular" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp">
-
-                <ImageView
-                    android:layout_width="18dp"
-                    android:layout_height="18dp"
-                    android:src="@drawable/icon_textbook_date"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/white"
-                    tools:text="1992, 2009, 2013"
+                    tools:text="Иванов И. И."
                     android:textSize="14sp"
                     android:layout_gravity="center"
                     android:layout_marginStart="4dp"
@@ -157,7 +134,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
-                tools:text="Комплект учебно-методических материалов полностью адаптирован для работы с учебником автора Л.С. Атанасяна, «Геометрия, 10-11». В представленном комплексе собраны дидактическая информация и рабочие тетради, которые позволят в полной мере обеспечить упрощение работы учителя."
+                tools:text="Для школьников у нас есть специальная секция по программированию, где они смогут узнать все основы создания игр, приложений и веб-сайтов."
                 android:textSize="14sp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/labgrotesque_regular" />
@@ -172,7 +149,7 @@
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:fontFamily="@font/labgrotesque_medium"
-                android:text="@string/continue_read"
+                android:text="@string/sign_up_section"
                 android:backgroundTint="@color/background_button" />
 
         </LinearLayout>

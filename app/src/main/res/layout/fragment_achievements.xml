@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AchievementsFragment"
+    tools:context=".presentation.activity.fragment.AchievementsFragment"
     android:background="@drawable/image_background_achievements"
     android:adjustViewBounds="true"
     >

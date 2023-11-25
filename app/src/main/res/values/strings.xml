@@ -24,6 +24,7 @@
     <string name="soon_answer">Совсем скоро вам ответят!</string>
     <string name="back_to_section">Вернуться к секциям</string>
     <string name="documents">Документы</string>
+    <string name="groups">Группы</string>
     <string name="download">Скачать</string>
     <string name="go_over">Перейти</string>
     <string name="privileges_and_prizes">Привилегии и призы</string>
@@ -31,4 +32,18 @@
     <string name="save_textbook">Сохраненные учебники</string>
     <string name="all_textbook">Все учебники</string>
     <string name="recommend_you">Рекомендовано вам</string>
+    <string name="my_section">Мои секции</string>
+    <string name="suitable_you">Мои секции</string>
+    <string name="all_section">Все секции</string>
+    <string name="sign_up_section">Записаться</string>
+    <string name="sign_up_section_title">Запись на секцию</string>
+    <string name="data_legal_representative">Данные законного представителя</string>
+    <string name="data_candidate">Данные кандидата на обучение</string>
+    <string name="fio">ФИО *</string>
+    <string name="snils">СНИЛС *</string>
+    <string name="phone_number">Телефон *</string>
+    <string name="documents_section_description">Для подачи заявки нужно прикрепить следующие документы:\n  1. Паспорт законного представителя\n  2. Паспорт/свидетельство о рождении ученика</string>
+    <string name="add_folder">Прикрепить файлы</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

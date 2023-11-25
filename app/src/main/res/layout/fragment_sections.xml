@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.activity.fragment.TextbooksFragment"
+    tools:context=".presentation.activity.fragment.SectionsFragment"
     android:background="@color/background">
 
     <ScrollView
@@ -50,6 +50,13 @@
                     android:layout_height="40dp"
                     android:layout_marginStart="8dp"
                     android:background="@drawable/edit_text_background"
+                    android:src="@drawable/icon_heart"/>
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/edit_text_background"
                     android:src="@drawable/icon_filter"/>
 
             </LinearLayout>
@@ -65,7 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:text="@string/save_textbook"
+                    android:text="@string/my_section"
                     android:textSize="18sp"
                     android:fontFamily="@font/labgrotesque_medium" />
 
@@ -92,23 +99,23 @@
                         android:textSize="11sp"
                         android:fontFamily="@font/labgrotesque_medium" />
 
-                        <LinearLayout
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/filter_background_blue"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="4dp"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/filter_background_blue"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="4dp"
-                            android:layout_marginTop="8dp">
+                            android:textColor="@color/white"
+                            tools:text="Математика"
+                            android:textSize="8sp"
+                            android:fontFamily="@font/labgrotesque_regular" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/white"
-                                tools:text="Математика"
-                                android:textSize="8sp"
-                                android:fontFamily="@font/labgrotesque_regular" />
-
-                        </LinearLayout>
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -124,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:text="@string/recommend_you"
+                    android:text="@string/suitable_you"
                     android:textSize="18sp"
                     android:fontFamily="@font/labgrotesque_medium" />
 
@@ -181,7 +188,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
-                        android:text="@string/all_textbook"
+                        android:text="@string/all_section"
                         android:textSize="18sp"
                         android:fontFamily="@font/labgrotesque_medium" />
 
