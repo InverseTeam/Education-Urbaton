@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import ramble.sokol.inverseeducation.R
@@ -44,21 +45,25 @@ class LoginFragment : Fragment() {
     }
 
     private fun getToken(email: String, password: String){
-        Log.d("MyLog", email + password)
         RetrofitHelper().getApi().getToken(UserLoginEntity(email, password)).enqueue(object : Callback<GetTokenResponse>{
             override fun onResponse(
                 call: Call<GetTokenResponse>,
                 response: Response<GetTokenResponse>
             ) {
-                Log.d("MyLog", response.toString())
-                val transaction = activity!!.supportFragmentManager.beginTransaction()
-                transaction.replace(R.id.linear_fragment, BottomNavBarFragment())
-                transaction.disallowAddToBackStack()
-                transaction.commit()
+                if (response.isSuccessful) {
+                    Log.d("MyLog", response.toString())
+                    val transaction = activity!!.supportFragmentManager.beginTransaction()
+                    transaction.replace(R.id.linear_fragment, BottomNavBarFragment())
+                    transaction.disallowAddToBackStack()
+                    transaction.commit()
+                }else{
+                    binding!!.textErrorLogin.visibility = View.VISIBLE
                 }
+            }
 
             override fun onFailure(call: Call<GetTokenResponse>, t: Throwable) {
                 Log.d("MyLog", t.message.toString())
+                Toast.makeText(activity, "Возникла ошибка, проверьте подключение", Toast.LENGTH_SHORT).show()
             }
 
         })

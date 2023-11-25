@@ -49,4 +49,5 @@
     <string name="textbook">Учебники</string>
     <string name="news">Новости</string>
     <string name="profile">Профиль</string>
+    <string name="error_login">Неправильная почта или пароль</string>
 </resources>

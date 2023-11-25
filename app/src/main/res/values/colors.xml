@@ -16,4 +16,5 @@
     <color name="filter_blue_background">#3966DB</color>
     <color name="backgroung_chip_choice">#255DF0</color>
     <color name="background_button_files">#5984F3</color>
+    <color name="error">#F36359</color>
 </resources>
