@@ -1,6 +1,7 @@
 package ramble.sokol.inverseeducation.presentation.fragment
 
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -14,6 +15,7 @@ import ramble.sokol.inverseeducation.data.model.GetTokenResponse
 import ramble.sokol.inverseeducation.data.model.UserLoginEntity
 import ramble.sokol.inverseeducation.databinding.FragmentLoginBinding
 import ramble.sokol.inverseeducation.presentation.RetrofitHelper
+import ramble.sokol.inverseeducation.presentation.TokenManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -22,6 +24,7 @@ import retrofit2.Response
 class LoginFragment : Fragment() {
 
     private var binding: FragmentLoginBinding? = null
+    private lateinit var tokenManager: TokenManager
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -38,7 +41,7 @@ class LoginFragment : Fragment() {
     }
 
     private fun init(){
-        Log.d("MyLog", "init")
+        tokenManager = TokenManager(requireActivity())
         binding!!.buttonLogin.setOnClickListener{
             getToken(binding!!.editTextEmail.text.toString(), binding!!.editTextPassword.text.toString())
         }
@@ -51,7 +54,7 @@ class LoginFragment : Fragment() {
                 response: Response<GetTokenResponse>
             ) {
                 if (response.isSuccessful) {
-                    Log.d("MyLog", response.toString())
+                    tokenManager.saveToken(response.body()!!.token.toString())
                     val transaction = activity!!.supportFragmentManager.beginTransaction()
                     transaction.replace(R.id.linear_fragment, BottomNavBarFragment())
                     transaction.disallowAddToBackStack()
