@@ -1,8 +1,5 @@
 package ramble.sokol.inverseeducation.presentation.fragment
 
-import android.animation.Animator
-import android.animation.ObjectAnimator
-import android.animation.PropertyValuesHolder
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -13,8 +10,8 @@ import androidx.fragment.app.Fragment
 import ramble.sokol.inverseeducation.R
 import ramble.sokol.inverseeducation.data.model.GetMyAccountResponse
 import ramble.sokol.inverseeducation.databinding.FragmentProfileBinding
-import ramble.sokol.inverseeducation.presentation.RetrofitHelper
-import ramble.sokol.inverseeducation.presentation.TokenManager
+import ramble.sokol.inverseeducation.presentation.manager.RetrofitHelper
+import ramble.sokol.inverseeducation.presentation.manager.TokenManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

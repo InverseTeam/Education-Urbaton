@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".presentation.activity.fragment.SectionsFragment"
     android:background="@color/background">
 
     <ScrollView
@@ -192,115 +191,88 @@
                         android:textSize="18sp"
                         android:fontFamily="@font/labgrotesque_medium" />
 
-                    <LinearLayout
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="8dp">-->
+
+<!--                        <HorizontalScrollView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:scrollbars="none">-->
+
+<!--                            <LinearLayout-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:orientation="horizontal">-->
+
+<!--                                <com.google.android.material.chip.ChipGroup-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    app:singleSelection="true"-->
+<!--                                    android:layout_marginRight="10dp">-->
+
+<!--                                    <com.google.android.material.chip.Chip-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        style="@style/CustomChipChoice"-->
+<!--                                        tools:text="Математика"-->
+<!--                                        android:checked="true"-->
+<!--                                        app:textStartPadding="16dp"-->
+<!--                                        app:textEndPadding="16dp"-->
+<!--                                        android:textAppearance="@style/chipText" />-->
+
+<!--                                    <com.google.android.material.chip.Chip-->
+<!--                                        style="@style/CustomChipChoice"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        tools:text="Информатика"-->
+<!--                                        android:textAppearance="@style/chipText"-->
+<!--                                        app:textEndPadding="16dp"-->
+<!--                                        app:textStartPadding="16dp" />-->
+
+<!--                                    <com.google.android.material.chip.Chip-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        style="@style/CustomChipChoice"-->
+<!--                                        tools:text="Биология"-->
+<!--                                        app:textStartPadding="16dp"-->
+<!--                                        app:textEndPadding="16dp"-->
+<!--                                        android:textAppearance="@style/chipText" />-->
+
+<!--                                    <com.google.android.material.chip.Chip-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        style="@style/CustomChipChoice"-->
+<!--                                        tools:text="Химия"-->
+<!--                                        app:textStartPadding="16dp"-->
+<!--                                        app:textEndPadding="16dp"-->
+<!--                                        android:textAppearance="@style/chipText" />-->
+
+
+<!--                                </com.google.android.material.chip.ChipGroup>-->
+
+<!--                            </LinearLayout>-->
+
+<!--                        </HorizontalScrollView>-->
+
+<!--                    </LinearLayout>-->
+
+                    <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp">
+                        android:orientation="horizontal">
 
-                        <HorizontalScrollView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:scrollbars="none">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="horizontal">
-
-                                <com.google.android.material.chip.ChipGroup
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    app:singleSelection="true"
-                                    android:layout_marginRight="10dp">
-
-                                    <com.google.android.material.chip.Chip
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        style="@style/CustomChipChoice"
-                                        tools:text="Математика"
-                                        android:checked="true"
-                                        app:textStartPadding="16dp"
-                                        app:textEndPadding="16dp"
-                                        android:textAppearance="@style/chipText" />
-
-                                    <com.google.android.material.chip.Chip
-                                        style="@style/CustomChipChoice"
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        tools:text="Информатика"
-                                        android:textAppearance="@style/chipText"
-                                        app:textEndPadding="16dp"
-                                        app:textStartPadding="16dp" />
-
-                                    <com.google.android.material.chip.Chip
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        style="@style/CustomChipChoice"
-                                        tools:text="Биология"
-                                        app:textStartPadding="16dp"
-                                        app:textEndPadding="16dp"
-                                        android:textAppearance="@style/chipText" />
-
-                                    <com.google.android.material.chip.Chip
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        style="@style/CustomChipChoice"
-                                        tools:text="Химия"
-                                        app:textStartPadding="16dp"
-                                        app:textEndPadding="16dp"
-                                        android:textAppearance="@style/chipText" />
-
-
-                                </com.google.android.material.chip.ChipGroup>
-
-                            </LinearLayout>
-
-                        </HorizontalScrollView>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@drawable/blue_content_background"
-                        android:padding="8dp"
-                        android:orientation="vertical">
-
-                        <ImageView
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view_all_sections"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/icon_content_blue"
-                            android:layout_gravity="end"/>
+                            android:scrollbars="horizontal"
+                            android:layout_marginTop="16dp"
+                            android:orientation="horizontal"
+                            tools:listitem="@layout/item_section"/>
 
-                        <TextView
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/white"
-                            tools:text="Геометрия 10-11 класс"
-                            android:layout_marginTop="8dp"
-                            android:textSize="11sp"
-                            android:fontFamily="@font/labgrotesque_medium" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/filter_background_blue"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="4dp"
-                            android:layout_marginTop="8dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/white"
-                                tools:text="Математика"
-                                android:textSize="8sp"
-                                android:fontFamily="@font/labgrotesque_regular" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
+                    </ScrollView>
 
                 </LinearLayout>
 

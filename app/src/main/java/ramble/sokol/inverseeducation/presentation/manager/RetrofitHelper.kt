@@ -1,4 +1,4 @@
-package ramble.sokol.inverseeducation.presentation
+package ramble.sokol.inverseeducation.presentation.manager
 
 import ramble.sokol.inverseeducation.data.util.ApiMethod
 import retrofit2.Retrofit

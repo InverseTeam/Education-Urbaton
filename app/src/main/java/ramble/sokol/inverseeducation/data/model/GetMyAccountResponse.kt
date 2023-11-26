@@ -17,8 +17,6 @@ data class GetMyAccountResponse(
     val school: Int?,
     @SerializedName("school_class")
     val school_class: Int?,
-    @SerializedName("role")
-    val role: Int?,
     @SerializedName("achievements")
     val achievements: List<String>?,
 )

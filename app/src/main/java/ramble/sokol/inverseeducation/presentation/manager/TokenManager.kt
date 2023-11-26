@@ -1,4 +1,4 @@
-package ramble.sokol.inverseeducation.presentation
+package ramble.sokol.inverseeducation.presentation.manager
 
 import android.content.Context
 

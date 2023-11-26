@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="148dp"
+    android:layout_marginEnd="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/blue_content_background"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon_content_blue"
+    android:layout_gravity="end"/>
+
+<TextView
+    android:id="@+id/text_sections_name"
+    android:layout_width="125dp"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    tools:text="Геометрия 10-11 класс"
+    android:layout_marginTop="8dp"
+    android:textSize="11sp"
+    android:fontFamily="@font/labgrotesque_medium" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/filter_background_blue"
+    android:paddingHorizontal="8dp"
+    android:paddingVertical="4dp"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/text_sections_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:text="Математика"
+        android:textSize="8sp"
+        android:fontFamily="@font/labgrotesque_regular" />
+
+</LinearLayout>
+
+</LinearLayout>

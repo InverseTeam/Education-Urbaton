@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.activity.fragment.NewsFragment"
     android:background="@color/background"
     android:paddingHorizontal="16dp">
 
@@ -17,7 +16,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="23dp"
+            android:paddingBottom="20dp"
             android:paddingTop="17dp"
             android:orientation="vertical">
 
@@ -38,70 +37,12 @@
                 android:textColorHint="@color/edit_text_hint"
                 android:textSize="16sp"/>
 
-            <LinearLayout
-                android:id="@+id/linearLayout"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_news"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:background="@drawable/layout_news_background"
-                    android:orientation="vertical"
-                    android:paddingHorizontal="16dp"
-                    android:paddingVertical="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:src="@drawable/image_logo_auth"/>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/white"
-                                android:text="Михайлова А. И."
-                                android:textSize="12sp"
-                                android:fontFamily="@font/labgrotesque_medium" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/third_text"
-                                android:text="12.11.23 в 15.45"
-                                android:layout_marginTop="4dp"
-                                android:textSize="12sp"
-                                android:fontFamily="@font/labgrotesque_regular" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/white"
-                        android:text="@string/inverse_project_description"
-                        android:layout_marginTop="16dp"
-                        android:textSize="12sp"
-                        android:fontFamily="@font/labgrotesque_regular" />
-
-                </LinearLayout>
-
-            </LinearLayout>
+                tools:listitem="@layout/item_news"
+                android:layout_marginTop="8dp"/>
 
 
         </LinearLayout>

@@ -20,22 +20,12 @@
             android:paddingTop="17dp"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/edit_text_search_news"
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/edit_text_background"
-                android:drawableStart="@drawable/icon_search"
-                android:drawablePadding="8dp"
-                android:fontFamily="@font/labgrotesque_regular"
-                android:hint="@string/search_with_endpoint"
-                android:inputType="textEmailAddress"
-                android:letterSpacing="0.02"
-                android:maxLines="1"
-                android:paddingHorizontal="16dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/edit_text_hint"
-                android:textSize="16sp"/>
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/image_calendar"/>
+
 
 
         </LinearLayout>

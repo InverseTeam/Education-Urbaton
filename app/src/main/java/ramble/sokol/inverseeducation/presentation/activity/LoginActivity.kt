@@ -7,9 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import ramble.sokol.inverseeducation.presentation.fragment.LoginFragment
 import ramble.sokol.inverseeducation.R
-import ramble.sokol.inverseeducation.presentation.FirstEntryManager
+import ramble.sokol.inverseeducation.presentation.manager.FirstEntryManager
 import ramble.sokol.inverseeducation.presentation.fragment.BottomNavBarFragment
-import ramble.sokol.inverseeducation.presentation.fragment.SectionFragment
 
 class LoginActivity : AppCompatActivity() {
 
