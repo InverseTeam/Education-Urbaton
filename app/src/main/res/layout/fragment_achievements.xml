@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.activity.fragment.AchievementsFragment"
     android:background="@drawable/image_background_achievements"
     android:adjustViewBounds="true"
     >
@@ -20,12 +19,14 @@
         >
         
         <ImageButton
+            android:id="@+id/button_back_achievements"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/icon_button_back"
             android:background="#00FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -56,6 +57,7 @@
             android:paddingHorizontal="24dp">
 
             <TextView
+                android:id="@+id/achivements_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -64,6 +66,7 @@
                 android:fontFamily="@font/labgrotesque_medium" />
 
             <TextView
+                android:id="@+id/achivements_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -114,7 +117,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/white"
-                                tools:text="Диплом призера ЗЭ ВсОШ"
+                                android:text="Диплом призера"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/labgrotesque_regular" />
 
@@ -122,7 +125,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/third_text"
-                                tools:text="2022-2023 учебный год"
+                                android:text="2022-2023 учебный год"
                                 android:textSize="12sp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/labgrotesque_regular" />
@@ -189,7 +192,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/white"
-                                tools:text="+777 баллов “Другое дело”"
+                                android:text="+777 баллов “Другое дело”"
                                 android:textSize="14sp"
                                 android:fontFamily="@font/labgrotesque_regular" />
 
@@ -197,7 +200,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/third_text"
-                                tools:text="Промокод: 6A02LLB3D5"
+                                android:text="Промокод: 6A02LLB3D5"
                                 android:textSize="12sp"
                                 android:layout_marginTop="4dp"
                                 android:fontFamily="@font/labgrotesque_regular" />

@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingTop="7dp"
+                    android:paddingTop="16dp"
                     android:gravity="center"
                     android:paddingBottom="17dp">
 
@@ -39,6 +39,7 @@
                         android:src="@drawable/image_profile_user"/>
 
                     <TextView
+                        android:id="@+id/text_profile_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
@@ -48,6 +49,7 @@
                         android:fontFamily="@font/sf_pro_display_semibold" />
 
                     <TextView
+                        android:id="@+id/text_profile_role"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/second_text"
@@ -108,6 +110,7 @@
                             android:fontFamily="@font/labgrotesque_medium" />
 
                         <TextView
+                            android:id="@+id/text_profile_school"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
@@ -139,6 +142,7 @@
                             android:fontFamily="@font/labgrotesque_medium" />
 
                         <TextView
+                            android:id="@+id/text_profile_class"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textColor="@color/white"
@@ -396,10 +400,13 @@
                     android:background="@drawable/layout_profile_info_background">
 
                     <LinearLayout
+                        android:id="@+id/linear_achievements_1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -430,10 +437,13 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linear_achievements_2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <ImageView
                             android:layout_width="match_parent"
@@ -464,10 +474,13 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/linear_achievements_3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground">
 
                         <ImageView
                             android:layout_width="match_parent"
