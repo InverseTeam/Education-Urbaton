@@ -8,4 +8,9 @@
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily">@font/labgrotesque_regular</item>
     </style>
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/labgrotesque_medium</item>
+        <item name="android:textSize"/>
+    </style>
 </resources>

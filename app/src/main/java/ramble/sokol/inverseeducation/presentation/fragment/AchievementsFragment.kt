@@ -46,7 +46,7 @@ class AchievementsFragment : Fragment() {
         }
         binding!!.buttonBackAchievements.setOnClickListener {
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.linear_fragment, ProfileFragment())
+            transaction.replace(R.id.linear_fragment, BottomNavBarFragment())
             transaction.disallowAddToBackStack()
             transaction.commit()
         }
