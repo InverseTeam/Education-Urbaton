@@ -20,6 +20,7 @@
         >
 
         <ImageButton
+            android:id="@+id/bitton_back_current_sections"
             android:layout_width="28dp"
             android:layout_height="28dp"
             android:src="@drawable/icon_button_back"
@@ -44,6 +45,7 @@
             android:paddingHorizontal="24dp">
 
             <TextView
+                android:id="@+id/current_section_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -63,6 +65,7 @@
                     android:src="@drawable/icon_textbook_top"/>
 
                 <TextView
+                    android:id="@+id/current_section_rate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/main_text"
@@ -73,6 +76,7 @@
                     android:fontFamily="@font/labgrotesque_regular" />
 
                 <TextView
+                    android:id="@+id/current_section_comments"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -96,6 +100,7 @@
                     android:src="@drawable/icon_location"/>
 
                 <TextView
+                    android:id="@+id/current_section_address"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -119,6 +124,7 @@
                     android:src="@drawable/icon_textbook_author"/>
 
                 <TextView
+                    android:id="@+id/current_section_author"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -131,6 +137,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/current_section_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -140,6 +147,7 @@
                 android:fontFamily="@font/labgrotesque_regular" />
 
             <Button
+                android:id="@+id/button_current_sections"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="16dp"

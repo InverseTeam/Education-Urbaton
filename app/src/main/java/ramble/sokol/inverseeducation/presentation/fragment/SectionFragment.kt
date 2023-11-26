@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import ramble.sokol.inverseeducation.R
 import ramble.sokol.inverseeducation.data.model.GetAllSectionsResponse
 import ramble.sokol.inverseeducation.databinding.FragmentSectionsBinding
 import ramble.sokol.inverseeducation.presentation.adapter.AllSectionsAdapter
@@ -57,6 +58,16 @@ class SectionFragment : Fragment() {
                     allSectionsList = response.body()!!
                     binding!!.recyclerViewAllSections.apply {
                         allSectionsAdapter = AllSectionsAdapter(allSectionsList)
+                        allSectionsAdapter.onItemClick = {
+                            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+                            val currentSectionsFragment = CurrentSectionsFragment()
+                            val bundle = Bundle()
+                            bundle.putInt("id", it.id!!)
+                            currentSectionsFragment.arguments = bundle
+                            transaction.replace(R.id.linear_fragment, currentSectionsFragment)
+                            transaction.disallowAddToBackStack()
+                            transaction.commit()
+                        }
                         adapter = allSectionsAdapter
                         layoutManager =
                             LinearLayoutManager(requireActivity(), LinearLayoutManager.HORIZONTAL, false)

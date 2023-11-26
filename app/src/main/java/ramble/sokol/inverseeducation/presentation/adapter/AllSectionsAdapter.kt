@@ -2,6 +2,7 @@ package ramble.sokol.inverseeducation.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.AdapterView.OnItemClickListener
 import androidx.recyclerview.widget.RecyclerView
 import ramble.sokol.inverseeducation.data.model.GetAllSectionsResponse
 import ramble.sokol.inverseeducation.data.model.GetNewsResponse
@@ -12,7 +13,9 @@ class AllSectionsAdapter (
     private val sectionsList: List<GetAllSectionsResponse>
 ): RecyclerView.Adapter<AllSectionsAdapter.ViewHolder>() {
 
-    inner class ViewHolder(val binding: ItemSectionBinding) : RecyclerView.ViewHolder(binding.root)
+    var onItemClick : ((GetAllSectionsResponse) -> Unit)? = null
+
+    class ViewHolder(val binding: ItemSectionBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -29,6 +32,9 @@ class AllSectionsAdapter (
         holder.binding.apply {
             textSectionsName.text = currentItem.name
             textSectionsCategory.text = currentItem.category!!.name
+            holder.itemView.setOnClickListener{
+                onItemClick?.invoke(currentItem)
+            }
         }
     }
 

@@ -2,6 +2,7 @@ package ramble.sokol.inverseeducation.data.util
 
 import io.reactivex.Single
 import ramble.sokol.inverseeducation.data.model.GetAllSectionsResponse
+import ramble.sokol.inverseeducation.data.model.GetCurrentSectionsResponse
 import ramble.sokol.inverseeducation.data.model.GetMyAccountResponse
 import ramble.sokol.inverseeducation.data.model.GetNewsResponse
 import ramble.sokol.inverseeducation.data.model.GetTokenResponse
@@ -12,6 +13,7 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.POST
+import retrofit2.http.Path
 
 interface ApiMethod {
 
@@ -34,5 +36,11 @@ interface ApiMethod {
     fun getAllSections(
         @Header("Authorization") token: String
     ): Call<List<GetAllSectionsResponse>>
+
+    @GET("sections/{id}/")
+    fun getCurrentSections(
+        @Path("id") id: Int,
+        @Header("Authorization") token: String
+    ): Call<GetCurrentSectionsResponse>
 
 }
